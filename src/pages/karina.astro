@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const karinaInfo = {
+  name: "柳智敏",
+  birthDate: "2000年4月11日",
+  position: "主舞、门面、主唱",
+  height: "167cm",
+  avatar: "/images/karina.jpg",
+  description: "作为aespa的队长和门面，柳智敏以出众的舞蹈实力和完美的舞台表现力著称。她独特的魅力和实力让她成为了组合中不可或缺的存在。"
+};
+---
+
+<Layout title="柳智敏 | Karina">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <section class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <h1 class="text-4xl font-bold">{karinaInfo.name} <span class="text-purple-400">Karina</span></h1>
+        <div class="space-y-4 text-gray-300">
+          <p><strong>生日：</strong>{karinaInfo.birthDate}</p>
+          <p><strong>担当：</strong>{karinaInfo.position}</p>
+          <p><strong>身高：</strong>{karinaInfo.height}</p>
+          <p class="text-lg leading-relaxed">{karinaInfo.description}</p>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[3/4] bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg">
+          <!-- Image placeholder -->
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

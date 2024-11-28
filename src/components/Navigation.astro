@@ -1,0 +1,27 @@
+---
+const navItems = [
+  { href: '/', text: '首页' },
+  { href: '/discography', text: '音乐作品' },
+  { href: '/kwangya', text: '世界观' },
+  { href: '/schedule', text: '行程' },
+  { href: '/karina', text: '柳智敏' },
+];
+---
+
+<nav class="bg-black/90 text-white fixed w-full top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <a href="/" class="text-2xl font-bold">æspa</a>
+      <div class="flex space-x-8">
+        {navItems.map(item => (
+          <a 
+            href={item.href}
+            class="hover:text-purple-400 transition-colors"
+          >
+            {item.text}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</nav>
