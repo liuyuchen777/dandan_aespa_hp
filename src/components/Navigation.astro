@@ -1,10 +1,10 @@
 ---
 const navItems = [
-  { href: '/', text: '首页' },
-  { href: '/discography', text: '音乐作品' },
-  { href: '/kwangya', text: '世界观' },
-  { href: '/schedule', text: '行程' },
-  { href: '/karina', text: '柳智敏' },
+  { href: "/", text: "首页" },
+  { href: "/discography", text: "音乐作品" },
+  { href: "/kwangya", text: "世界观" },
+  { href: "/schedule", text: "行程" },
+  { href: "/karina", text: "柳智敏" },
 ];
 ---
 
@@ -13,14 +13,13 @@ const navItems = [
     <div class="flex justify-between items-center h-16">
       <a href="/" class="text-2xl font-bold">æspa</a>
       <div class="flex space-x-8">
-        {navItems.map(item => (
-          <a 
-            href={item.href}
-            class="hover:text-purple-400 transition-colors"
-          >
-            {item.text}
-          </a>
-        ))}
+        {
+          navItems.map((item) => (
+            <a href={item.href} class="hover:text-purple-400 transition-colors">
+              {item.text}
+            </a>
+          ))
+        }
       </div>
     </div>
   </div>

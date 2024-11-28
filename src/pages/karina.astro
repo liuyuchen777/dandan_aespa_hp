@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 const karinaInfo = {
   name: "柳智敏",
@@ -7,7 +7,8 @@ const karinaInfo = {
   position: "主舞、门面、主唱",
   height: "167cm",
   avatar: "/images/karina.jpg",
-  description: "作为aespa的队长和门面，柳智敏以出众的舞蹈实力和完美的舞台表现力著称。她独特的魅力和实力让她成为了组合中不可或缺的存在。"
+  description:
+    "作为aespa的队长和门面，柳智敏以出众的舞蹈实力和完美的舞台表现力著称。她独特的魅力和实力让她成为了组合中不可或缺的存在。",
 };
 ---
 
@@ -15,7 +16,10 @@ const karinaInfo = {
   <div class="max-w-6xl mx-auto px-4 py-12">
     <section class="grid md:grid-cols-2 gap-12 items-center">
       <div class="space-y-6">
-        <h1 class="text-4xl font-bold">{karinaInfo.name} <span class="text-purple-400">Karina</span></h1>
+        <h1 class="text-4xl font-bold">
+          {karinaInfo.name}
+          <span class="text-purple-400">Karina</span>
+        </h1>
         <div class="space-y-4 text-gray-300">
           <p><strong>生日：</strong>{karinaInfo.birthDate}</p>
           <p><strong>担当：</strong>{karinaInfo.position}</p>
@@ -24,8 +28,15 @@ const karinaInfo = {
         </div>
       </div>
       <div class="relative">
-        <div class="aspect-[3/4] bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg">
-          <!-- Image placeholder -->
+        <div
+          class="aspect-[3/4] bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Aespa_Karina_%EC%B9%B4%EB%A6%AC%EB%82%98_20240618_03.png"
+            alt="Description of the image"
+            width="500"
+            height="300"
+          />
         </div>
       </div>
     </section>
